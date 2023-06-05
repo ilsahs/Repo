@@ -6,21 +6,18 @@ class TestEmployeeManagement(unittest.TestCase):
     def test_employee_name(self):
         management = employee_management.EmployeeManagement()
         employee1 = employee_management.Employee(1,21,1,"IT")
-        management.add_employee(employee1)
         with self.assertRaises(Exception):
             management.add_employee(employee1)
 
     def test_employee_ID(self):
         management = employee_management.EmployeeManagement()
         employee1 = employee_management.Employee("John",20,-1,"HR")
-        management.add_employee(employee1)
         with self.assertRaises(Exception):
             management.add_employee(employee1)
 
     def test_employee_Age(self):
         management = employee_management.EmployeeManagement()
         employee1 = employee_management.Employee("John",-20,1,"HR")
-        management.add_employee(employee1)
         with self.assertRaises(Exception):
             management.add_employee(employee1)
 
