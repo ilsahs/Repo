@@ -4,7 +4,7 @@ class Employee:
             raise Exception("name can not be an integer.")
         self.name = name
         if age < 0:
-            raise Exception("ID can not be a negative number.")
+            raise Exception("Age can not be a negative number.")
         self.age = age
         if id < 0:
             raise Exception("ID can not be a negative number.")
